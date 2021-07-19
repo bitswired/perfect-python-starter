@@ -29,3 +29,12 @@ build-backend = "poetry.core.masonry.api"
 # Configuration for tool compatible with pyproject.toml
 [tool.isort]
 profile = "black"
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = 'your_package_name'
